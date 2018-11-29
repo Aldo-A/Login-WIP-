@@ -17,11 +17,3 @@ def authenticate(self,user,passwd):
     else:
         print("Username or password is incorrect!")
 
-
-##        if user in accounts:
-##            if(passwd==accounts[user]):
-##                print("Access granted")
-##                break
-    
-#accounts={"Aldo":"8dhc*#&", "Bob":"3409&$(DH", "Jill": "123456789"}
-
