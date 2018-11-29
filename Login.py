@@ -1,17 +1,6 @@
 from tkinter import *
 from AuthenticateServer import *
 
-##def lockAccount():
-##    lock=Tk()
-##    lock.title("Account Locked")
-##    msg="Please reset your password, or contact an Admin"
-##    text=Label(lock, text=msg)
-##    text.pack()
-##    Close=Button(lock, text="Close", command =lock.destroy)
-##    Close.pack()
-##    lock.resizable(0,0)
-##    lock.mainloop()
-
 
 class Login():
     def __init__(self, master):
@@ -19,9 +8,6 @@ class Login():
         master.title("Welcome!")
         master.config(background="#babbbc")
 
-##        self.img=PhotoImage(file="illusion.gif",width=200,height=100)
-##        self.imgDisplay=Label(master, image=self.img)
-##        self.imgDisplay.grid(row=0)
         self.attempts=0
 
         self.EntryUsr=Text(master, state="normal", width=25, height=1, background="white",highlightbackground="black", highlightthickness=1)
@@ -44,7 +30,7 @@ class Login():
             self.attempts+=1
             if(self.attempts==3):
                 print("LOCKED")
-                #lockAccount()
+                
                 
             
             
